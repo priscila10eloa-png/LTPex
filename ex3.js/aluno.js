@@ -1,14 +1,10 @@
-class Aluno {
-  nome;
-  curso;
+export default class Aluno {
+  constructor(nome, curso) {
+    this.nome = nome;
+    this.curso = curso;
+  }
 
   apresentar() {
-    console.log("Olá, meu nome é " + this.nome + " e curso " + this.curso);
+    console.log(`Olá, meu nome é ${this.nome} e curso ${this.curso}`);
   }
 }
-
-let aluno1 = new Aluno();
-aluno1.nome = "priscila";
-aluno1.curso = "Sistemas de Informação";
-
-aluno1.apresentar();
