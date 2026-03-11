@@ -1,5 +1,5 @@
-const Cachorro = require('./cachorro.js');
+import Cachorro from "./cachorro.js";
 
-let cachorro1 = new Cachorro("Rex", "Vira-lata");
+const cachorro1 = new Cachorro("Rex", "Vira-lata");
 
 cachorro1.latir();

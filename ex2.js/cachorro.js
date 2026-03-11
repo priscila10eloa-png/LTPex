@@ -1,4 +1,4 @@
-class Cachorro {
+export default class Cachorro {
   constructor(nome, raca) {
     this.nome = nome;
     this.raca = raca;
@@ -8,5 +8,3 @@ class Cachorro {
     console.log("Au au!");
   }
 }
-
-module.exports = Cachorro;
