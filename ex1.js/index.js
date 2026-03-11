@@ -1,5 +1,5 @@
-const Pessoa = require('./pessoa.js');
+import Pessoa from "./pessoa.js";
 
-let pessoa1 = new Pessoa("Maria", 30);
+const pessoa = new Pessoa("Maria", 30);
 
-console.log("Nome: " + pessoa1.nome + ", Idade: " + pessoa1.idade);
+console.log(`Nome: ${pessoa.nome}, Idade: ${pessoa.idade}`);
