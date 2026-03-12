@@ -1,6 +1,8 @@
-class ContaBancaria {
-  titular;
-  saldo = 0;
+export default class ContaBancaria {
+  constructor(titular) {
+    this.titular = titular;
+    this.saldo = 0;
+  }
 
   depositar(valor) {
     this.saldo = this.saldo + valor;
@@ -12,11 +14,3 @@ class ContaBancaria {
     }
   }
 }
-
-let conta = new ContaBancaria();
-conta.titular = "pri"
-
-conta.depositar(500);
-conta.sacar(200);
-
-console.log("Saldo: " + conta.saldo);

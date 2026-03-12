@@ -1,5 +1,7 @@
-class Mensageiro {
-  remetente;
+export default class Mensageiro {
+  constructor(remetente) {
+    this.remetente = remetente;
+  }
 
   enviar(destinatario, mensagem) {
     console.log("De: " + this.remetente);
@@ -7,8 +9,3 @@ class Mensageiro {
     console.log("Mensagem: " + mensagem);
   }
 }
-
-let m1 = new Mensageiro();
-m1.remetente = "priscila"
-
-m1.enviar("João", "Olá, tudo bem?");

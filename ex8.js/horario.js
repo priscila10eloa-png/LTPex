@@ -1,6 +1,8 @@
-class Pessoa {
-  nome;
-  horario;
+export default class Pessoa {
+  constructor(nome, horario) {
+    this.nome = nome;
+    this.horario = horario;
+  }
 
   saudar() {
     if (this.horario < 12) {
@@ -12,9 +14,3 @@ class Pessoa {
     }
   }
 }
-
-let p1 = new Pessoa();
-p1.nome = "João";
-p1.horario = 14;
-
-console.log(p1.saudar());

@@ -1,5 +1,7 @@
-class Contador {
-  valor = 0;
+export default class Contador {
+  constructor() {
+    this.valor = 0;
+  }
 
   incrementar() {
     this.valor++;
@@ -9,12 +11,3 @@ class Contador {
     console.log("Valor atual: " + this.valor);
   }
 }
-
-let c1 = new Contador();
-
-c1.incrementar();
-c1.incrementar();
-c1.incrementar();
-c1.incrementar();
-
-c1.mostrar();

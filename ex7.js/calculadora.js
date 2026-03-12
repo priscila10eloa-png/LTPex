@@ -1,6 +1,8 @@
-class Calculadora {
-  num1;
-  num2;
+export default class Calculadora {
+  constructor(num1, num2) {
+    this.num1 = num1;
+    this.num2 = num2;
+  }
 
   somar() {
     return this.num1 + this.num2;
@@ -18,12 +20,3 @@ class Calculadora {
     return this.num1 / this.num2;
   }
 }
-
-let calc = new Calculadora();
-calc.num1 = 10;
-calc.num2 = 5;
-
-console.log(calc.somar());
-console.log(calc.subtrair());
-console.log(calc.multiplicar());
-console.log(calc.dividir());
